@@ -241,3 +241,8 @@ void configure() {
 In the background, with max container memory, host/guest OS port and volume mapping:
 
     docker run --name my-service -d -m 256m -p 8080:8080 -v /data/my-service:/app/data tommyb/my-service
+
+#### SSH into the docker container
+Look at dir in the docker image
+
+    docker exec -t -i [container_name] /bin/sh

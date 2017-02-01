@@ -106,6 +106,13 @@ Refer to: http://stackoverflow.com/questions/5816688/reseting-remote-to-a-certai
 
 This will discard previous commit so be careful when others may be working on the same remote branch!
 
+#### Local branch reset
+Refer to: http://stackoverflow.com/questions/161813/how-to-resolve-merge-conflicts-in-git
+
+    git pull --rebase
+    
+This will discard all local commits on a repo/branch and mirror the commits on your remote repo/branch, so be careful!
+
 #### Undo (reset) last commit
 Refer to: http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
 

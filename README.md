@@ -192,7 +192,11 @@ Run maven compile to resolve.
 Run maven dependency:source to resolve.
 
     mvn clean install dependency:sources -Dmaven.test.skip=true
-    
+   
+To download all documentation  
+
+    mvn dependency:resolve -Dclassifier=javadoc
+
 #### m2eclipse project import incorrectly configured project / classpath
 Your workspace is likely corrupt - create a new one!
 

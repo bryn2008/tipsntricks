@@ -127,6 +127,15 @@ That'll reset the active local branch.. then to push to the remote branch if you
 
 This will resolve all conflicts in favour of 'theirs'
 
+#### Tidy branches from upstream/master:
+
+    git branch -a
+    git branch -D <name_of_branch_to_delete>
+    git push origin --delete <name_of_branch_to_delete>
+    git fetch -p
+
+This will show all avaliable branches and first delete the local branch, then remove a remote branch in the remote repository. A quick git fetch with -p (prune) will remove and remote-tracking branches which no longer exist on the remote.
+
 ### Apache / Tomcat
 #### Listen to comms coming in to apache:
 
